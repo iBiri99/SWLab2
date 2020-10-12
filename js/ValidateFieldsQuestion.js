@@ -54,7 +54,6 @@ function correoValido(correo){
         alert("Es obligatorio introducir una dirección de correo");
         return false;
     }
-
     var alum = /^[a-z]+[0-9]{3}(@ikasle.ehu.)(eus|es)$/.test(correo);
     var prof = /^[a-z]+([\.-]{1}[a-z]+)?(@ehu.)(eus|es)$/.test(correo);
     if(!alum && !prof) {
