@@ -18,11 +18,11 @@
       Complejidad de la pregunta: 
       <div id="botones">
                 <br>
-                <input type="radio" id="facil" name="complej" value="Suma" checked="checked">
+                <input type="radio" id="facil" name="complej" value="1" checked="checked">
                 <label for="facil">Fácil</label>
-                <input type="radio" id="medio" name="complej" value="Resta">
+                <input type="radio" id="medio" name="complej" value="2">
                 <label for="medio">Medio</label>
-                <input type="radio" id="dificil" name="complej" value="Mul">
+                <input type="radio" id="dificil" name="complej" value="3">
                 <label for="dificil">Dificil</label> <br><br>
       </div>
       Inserte el tema: <input type="text" id="tema"><br><br>
