@@ -2,6 +2,7 @@
 <html>
 <head>
   <?php include '../html/Head.html'?>
+  <script src="../js/ValidateFieldsQuestion.js"></script>
 </head>
 <body>
   <?php include '../php/Menus.php' ?>
@@ -27,7 +28,7 @@
       </div>
       Inserte el tema: <input type="text" id="tema"><br><br>
       <div id="botones">
-      <button type="button" onclick="funcion();" class="boton-3d">Guardar las preguntas</button>
+      <button type="button" onclick="validar();" class="boton-3d">Guardar las preguntas</button>
       <input type="reset" value="¡Borrar!"class="boton-3d">
     </div>
       </form>

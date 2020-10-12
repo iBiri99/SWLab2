@@ -23,7 +23,7 @@
       <div id="second">
       <br/>
       <img src="../images/JM.png" alt="Italian Trulli"><br/>
-        Nombre: José María Irizar
+        Nombre: José María Irizar<br/>
         Especialidad cursada: Ingenieria de Computadores.<br/>
         Correo electronico: jirizar009@ikasle.ehu.eus<br>
       </div>
