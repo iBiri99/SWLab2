@@ -18,7 +18,7 @@
       <img src="../images/Yara.png" alt="Italian Trulli"><br/>
         Nombre: Yara Diaz de Cerio<br/>
         Especialidad cursada: Software.<br/>
-        Correo electronico:@ikasle.ehu.eus<br>
+        Correo electronico: ydiazdecerio001@ikasle.ehu.eus<br>
       </div>
       <div id="second">
       <br/>

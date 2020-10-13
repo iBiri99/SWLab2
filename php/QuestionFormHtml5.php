@@ -39,10 +39,10 @@
         
         <label for="ltema" id="lTema">Tema de la pregunta*:</label>
         <input type="text" id="tema" name="tema" required><br><br>
-        <output id="list"></output><br>
         <input type="file" id="img" name="imagen" accept=".jpeg, .jpg, .png"><br>
         
-        <input type="submit" id="submit" value="Enviar">
+        <input type="submit" id="submit" value="Enviar"><br>
+        <output id="list"></output><br>
       </form>
 
     </div>
