@@ -3,6 +3,7 @@
 
 <head>
   <?php include '../html/Head.html' ?>
+  <script src="../js/ValidateFieldsQuestion.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         <output id="list"></output><br>
         <input type="file" id="img" name="imagen" accept=".jpeg, .jpg, .png"><br>
         
-        <input type="submit" id="submit" value="Enviar">
+        <button type="button" onclick="validar();" class="boton-3d">Guardar las preguntas</button>
       </form>
 
     </div>

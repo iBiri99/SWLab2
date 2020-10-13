@@ -8,24 +8,15 @@ function validar(){
     var complejidad = document.getElementById("complej");
     var tema = document.getElementById("tema").value;
     var pos=0;
-    var complejidad="";
+    var complejidad=0;
     for (var i = 0, length = complejidad.length; i < length; i++) {
         if (complejidad[i].checked) {
             pos=i;
             break;
         }
     }
-    switch(pos){
-        case 0:
-            complejidad="baja";
-            break;
-        case 1:
-            complejidad="media";
-            break;
-        case 2:
-            complejidad="alta";
-            break;
-    }
+    complejidad=pos+1;
+
 
     if(!correoValido(correo)){
         return false;
@@ -41,10 +32,11 @@ function validar(){
     } else if(complejidad != 1 && complejidad != 2 && complejidad != 3) {
         return false;
 
-    } else if(tema.length > 0){
+    } else if(tema.length == 0){
         alert("Introduce un tema");
         return false;
     } 
+    alert("La pregunta ha sido registrada correctamente!")
     return true;
     
 }
