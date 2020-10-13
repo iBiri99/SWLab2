@@ -42,7 +42,7 @@
         <output id="list"></output><br>
         <input type="file" id="img" name="imagen" accept=".jpeg, .jpg, .png"><br>
         
-        <button type="button" onclick="validar();" class="boton-3d">Guardar las preguntas</button>
+        <input type="submit" id="submit" value="Enviar">
       </form>
 
     </div>
@@ -51,21 +51,6 @@
 </body>
 <script>
   document.getElementById('img').addEventListener('change', mostrarImagen, false);
-
-  function mostrarImagen(evt) {
-    var files = evt.target.files;
-    var f = files[0];
-    var reader = new FileReader();
-
-    reader.onload = (function(theFile) {
-      return function(e) {
-        document.getElementById('list').innerHTML = ['<img src="', e.target.result, '" title="', theFile.name, '" width="100" />'].join('');
-      };
-    })(f);
-
-    reader.readAsDataURL(f);
-
-  }
 </script>
 
 </html>
