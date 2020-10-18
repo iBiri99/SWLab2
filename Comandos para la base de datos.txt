@@ -1,0 +1,7 @@
+CREATE DATABASE Quiz;
+USE Quiz;
+CREATE TABLE Preguntas (id int NOT NULL AUTO_INCREMENT,correo VARCHAR(20), enunciado TEXT, correcto TEXT, incor1 TEXT, incor2 TEXT, incor3 TEXT,tema TEXT,complejidad int(1),imagen varBinary(MAX),PRIMARY KEY(id))
+(la info sera: correo, Enunciado, correcta, incorrecta1,incorrecta2,incorrecta3, Complejidad(1,2,3), Tema,(Imagen))
+
+contraseña del root:
+contraRoot
