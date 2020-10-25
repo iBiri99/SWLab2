@@ -20,7 +20,7 @@
     $tema=$_GET["tema"];
 
     //Ahora vamos a abrir una sesion con mysqli:
-    $mysqli = mysqli_connect ("localhost", "id14878982_root", "ContraRoot_99", "id14878982_quiz");
+    $mysqli = mysqli_connect ("localhost", "id15223212_root", "", "id15223212_quiz");
     if(!$mysqli){
       die("Hay algo raro que esta fallando con MySQL". mysql_connect_error());
     }
@@ -31,8 +31,9 @@
     <div>
       
       La pregunta ha sido añadida correctamente
-
     </div>" ;
+    echo'<a href="ShowQuestions.php">Mostrar preguntas</a>';
+    
     }else{
         echo ''.mysqli_error($mysqli).'';
     }

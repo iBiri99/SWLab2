@@ -30,7 +30,7 @@
       
       <input type="file" id="img" name="imagen" accept=".jpeg, .jpg, .png"><br>
       <div id="botones">
-      <button type="submit" onclick="validar();" class="boton-3d">Guardar las preguntas</button>
+      <button type="submit" onclick="return validar();" class="boton-3d">Guardar las preguntas</button>
       <input type="reset" value="¡Borrar!"class="boton-3d"><br>
       <output id="list"></output><br>
     </div>

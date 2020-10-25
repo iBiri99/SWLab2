@@ -7,8 +7,20 @@
   <?php include '../php/Menus.php' ?>
   <section class="main" id="s1">
     <div>
-      Código PHP para mostrar una tabla con las preguntas de la BD.<br>
-      La tabla no incluye las imágenes
+      <?php  
+        $link = mysqli_connect("localhost", "id15223212_root", "ContraRoot_99", "id15223212_quiz");
+        $preguntas = mysqli_query($link, "select * from preguntas");
+        echo  '<table border=1> <tr> <th> CORREO </th> <th> ENUNCIADO </th> <th> RESPUESTA CORRECTA </th><th> RESPUESTA INCORRECTA 1 </th><th> RESPUESTA INCORRECTA 2 </th> <th> RESPUESTA INCORRECTA 3 </th>
+        <th> TEMA </th><th> COMPLEJIDAD </th>
+        </tr>';
+        while ($row = mysqli_fetch_array($preguntas)) {
+          echo '<tr><td>' . $row['correo'] . '</td> <td>' . $row['enunciado'] . '</td> <td>' . $row['correcto'] . '</td> <td>' . $row['incor1'] . '</td> <td>' . $row['incor2'] .'</td> <td>' . $row['incor3'] . '</td> <td>' . $row['tema'] . '</td> <td>' . $row['complejidad'] . 
+          '</td></tr>';
+        }
+        echo '</table>';
+        $preguntas->close();
+        mysqli_close($link);
+      ?>
     </div>
   </section>
   <?php include '../html/Footer.html' ?>
