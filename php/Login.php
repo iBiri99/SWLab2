@@ -52,7 +52,7 @@
             //El usuario no existe
             echo "
                 <a>
-                    El usuario $mail no esta registrado.
+                    El usuario $email no esta registrado.
                 </a>" ;  
         }
 
