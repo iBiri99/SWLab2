@@ -9,7 +9,11 @@
   if(isset($_GET['mail'])){
    $correoaqui=$_GET['mail'];
   include '../php/Menus.php';
- } ?>
+ }else{
+   echo 'No tienes permiso para estar aqui';
+ include '../php/Menus.php';
+ die();
+} ?>
   <section class="main" id="s1">
     <h2>¡Añade una nueva pregunta a nuestro formulario!</h2><br>
     <div>
