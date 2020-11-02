@@ -7,7 +7,11 @@
 </head>
 
 <body>
-  <?php include '../php/Menus.php' ?>
+  <?php
+  if(isset($_GET['mail'])){
+   $correoaqui=$_GET['mail'];
+ } 
+ include '../php/Menus.php' ?>
   <section class="main" id="s1">
     <div id="header">
       <h2>Autores:</h2>

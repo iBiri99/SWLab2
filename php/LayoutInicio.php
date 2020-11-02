@@ -4,12 +4,7 @@
   <?php include '../html/Head.html'?>
 </head>
 <body>
-<?php
- if(isset($_GET['mail'])){
-   $correoaqui=$_GET['mail'];
- }
-  include '../php/Menus.php';
-?>
+  <?php include '../php/MenusInicio.php' ?>
   <section class="main" id="s1">
     <div>
 
@@ -20,4 +15,3 @@
   <?php include '../html/Footer.html' ?>
 </body>
 </html>
-
