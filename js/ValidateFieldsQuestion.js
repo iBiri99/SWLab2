@@ -36,6 +36,7 @@ function validar(){
         alert("Introduce un tema");
         return false;
     } 
+      $("#InsertarPregunta").submit();
     alert("La pregunta ha sido registrada correctamente!")
     return true;
     
